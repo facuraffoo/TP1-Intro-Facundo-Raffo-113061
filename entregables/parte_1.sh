@@ -52,6 +52,7 @@ filtrar_pokemons() {
             done < <(tail -n +2 "$archivo_pokemons")
         fi
     done < <(tail -n +2 "$archivo_tipos")
+    echo "El programa se ejecuto con exito!"
 }
 
 verificar_cantidad_argumentos "$@"
